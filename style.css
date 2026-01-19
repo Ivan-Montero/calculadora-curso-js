@@ -86,7 +86,7 @@ input[type="button"]:active {
     transform: none;
 }
 
-/* @media (hover: hover) { */
+@media (hover: hover) {
   input[type="button"]:hover {
     box-shadow:
         /* 1 */
@@ -109,7 +109,7 @@ input[type="button"]:active {
     letter-spacing: -0.05em;
     color: #1e1f2ae6;
   }
-/* } */
+}
 
 input[type="button"]:last-child {
   margin-right: 0;
