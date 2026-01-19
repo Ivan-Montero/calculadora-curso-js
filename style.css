@@ -54,9 +54,10 @@ input[type="button"] {
   font-weight: 700;
   color: #1e1f2a;
 
-  -webkit-tap-highlight-color: transparent;
+  
   cursor: pointer;
-  -webkit-tap-highlight-color: #8a9db2;
+  /* -webkit-tap-highlight-color: #8a9db2; */
+  -webkit-tap-highlight-color: transparent;
   border-radius: 999vw;
   background-color: rgb(138, 157, 178, 0.75);
   box-shadow: -0.15em -0.15em 0.15em -0.075em rgb(92, 101, 117, 0.25),
@@ -79,13 +80,6 @@ input[type="button"] {
     -0.075em -0.25em 0.25em 0.1em inset rgba(5, 5, 5, 0.25);
 }
 
-
-input[type="button"]:active {
-    outline: none; /* Elimina el contorno predeterminado */
-    box-shadow: none;
-    transform: none;
-}
-
 @media (hover: hover) {
   input[type="button"]:hover {
     box-shadow:
@@ -105,15 +99,9 @@ input[type="button"]:active {
         -0.075em -0.12em 0.2em 0.1em inset rgba(5, 5, 5, 0.25);
     transform: scale(0.975);
     
-    /* z-index: 4; */
     letter-spacing: -0.05em;
     color: #1e1f2ae6;
   }
-}
-
-input[type="button"]:hover {
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 
 input[type="button"]:last-child {
