@@ -10,3 +10,11 @@ function calcular() {
     const resultado = eval(document.getElementById("pantalla").value);
     document.getElementById("pantalla").value = resultado;    
 }
+
+const botones = document.querySelectorAll("button");
+
+botones.forEach(boton => {
+    boton.addEventListener('touchend', () => {
+        boton.blur(); // Elimina el foco del botón en dispositivos táctiles
+      });
+});
